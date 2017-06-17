@@ -15,6 +15,7 @@ WORKDIR /home/me
 RUN mkdir .ssh
 RUN chmod 700 .ssh
 COPY ./ubuntu_ssh_docker_rsa.pub .ssh/authorized_keys
+COPY ./ubuntu_ssh_docker_rsa .
 
 USER root
 ENTRYPOINT ["/usr/sbin/sshd", "-D", "-p"]
