@@ -1,3 +1,4 @@
+# ubuntu container with SSH server and sudo without password for the "me" user 
 FROM ubuntu:yakkety
 
 RUN apt-get update
